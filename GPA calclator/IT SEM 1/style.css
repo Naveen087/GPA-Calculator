@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+#calculate {
+  display: block;
+  margin: auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(39, 100%, 50%);
+  border-radius: 10px;
+  color: aliceblue;
+}
+#calculate:hover {
+  background-color: hsl(39, 100%, 40%);
+}
+#calculate:active {
+  background-color: black;
+  color: hsl(39, 100%, 40%);
+}
+#display {
+  text-align: center;
+  font-size: 1.5em;
+}
+label {
+  background-color: hsla(0, 0%, 0%, 0.808);
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  display: block;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.course {
+  margin: 20px;
+}
+.main {
+  margin: 5% 3.5% 5% 1%;
+  float: left;
+  display: block;
+}
+.tab {
+  margin: 0% 0% 0% 1%;
+  display: inline-block;
+  border-radius: 20px;
+  border: none;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.808);
+  color: white;
+  margin-bottom: 20%;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  color: black;
+  font-size: 1.1em;
+}
+table {
+  background-color: white;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 500px;
+}
+select {
+  float: right;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1em;
+  background-color: hsla(0, 0%, 60%);
+  color: white;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-left: 8px;
+}
+select:hover {
+  background-color: hsla(0, 0%, 40%);
+}
+select:focus {
+  background-color: black;
+  color: white;
+}
+select option {
+  background-color: hsla(0, 0%, 60%, 0.822);
+}
+.formula {
+  font-size: 1em;
+  background-color: hsl(0, 0%, 97%);
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.fraction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+}
+.fraction .numerator {
+  border-bottom: 1px solid black;
+  padding: 0 10px;
+}
+.fraction .denominator {
+  padding: 0 10px;
+}
+.right {
+  float: inline-end;
+  margin-left: 25px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: hsla(0, 0%, 0%, 0.808);
+  text-align: center;
+}
+.right h2 {
+  color: white;
+}
+.f1 {
+  color: white;
+  font-size: 1.1em;
+}
+.f2 p {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0% 0% 0% 1%;
+}
+.f3 {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 1.05rem;
+}

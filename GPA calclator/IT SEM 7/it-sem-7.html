@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GPA Calculator</title>
+  </head>
+  <body>
+    <div class="course">
+      <h1>Information Technology</h1>
+      <h2>Semester 7</h2>
+    </div>
+    <br />
+
+    <!-- Subjects -->
+
+    <div class="main">
+      <label for="hve"
+        >Human Values and Ethics (GE3791)
+        <select name="hve" id="hve" required>
+          <option value=""></option>
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label for="pom"
+        >Principles of Management (CCS354)
+        <select name="pom" id="pom" required>
+          <option value=""></option>
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <label for="ita"
+        >IT in Agricultural System (AI3021)
+        <select name="ita" id="ita" required>
+          <option value=""></option>
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select></label
+      >
+      <br /><br />
+
+      <label for="mda"
+        >Multivariate Data Analysis (OMG355)
+        <select name="mda" id="mda" required>
+          <option value=""></option>
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select></label
+      >
+      <br /><br />
+
+      <label for="sint"
+        >Summer internship (IT3711)
+        <select name="sint" id="sint" required>
+          <option value=""></option>
+          <option value="O">O</option>
+          <option value="A+">A+</option>
+          <option value="A">A</option>
+          <option value="B+">B+</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <button id="calculate">Calculate</button>
+      <br /><br />
+      <p id="display"></p>
+      <br /><br />
+    </div>
+
+    <!-- Data from Anna University -->
+
+    <div class="tab">
+      <h2>Grade Points Table</h2>
+      <table>
+        <tr>
+          <th>Grade</th>
+          <th>Marks</th>
+          <th>Points</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>O</td>
+            <td>90-100</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>A+</td>
+            <td>80-89</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>70-79</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>B+</td>
+            <td>60-69</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>50-59</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>40-49</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>RA</td>
+            <td>&lt 40</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="right">
+      <h2>According to Anna University</h2>
+      <div class="f2">
+        <p class="f1">
+          GPA for a semester is the ratio of the sum of the <br />products of
+          the number of credits acquired for <br />courses and the corresponding
+          points to the sum<br />
+          of the number of credits acquired for the courses<br />
+          in the semester.<br />
+        </p>
+      </div>
+      <p class="formula">
+        GPA =
+        <span class="fraction">
+          <span class="numerator"
+            >Sum of (Credits × Grade Points for all courses)</span
+          >
+          <span class="denominator">Total Credits taken in that semester</span>
+        </span>
+      </p>
+      <div class="f3">
+        <h3>Note:</h3>
+        <p>
+          RA courses are excluded from GPA and CGPA until passed.<br />
+          Once cleared, their credits and grade points are included in<br />
+          future calculations.
+        </p>
+      </div>
+    </div>
+    <script src="it-sem-7.js"></script>
+  </body>
+</html>
